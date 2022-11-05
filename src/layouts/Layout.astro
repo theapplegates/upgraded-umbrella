@@ -26,17 +26,6 @@ const socialImageURL = new URL(
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-  <script type="text/javascript">
-    algoliasearchNetlify({
-      appId: 'PUN4C6KMW2',
-      apiKey: '9b65a47a47ed6220c730685ff171a23c',
-      siteId: '3581f58d-8835-438d-b1e7-0f770c66f6a6',
-      branch: 'main',
-      selector: 'div#search',
-    });
-  </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -71,6 +60,12 @@ const socialImageURL = new URL(
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
+      <!-- Before the closing </head> -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
+      />
+
     />
 
     <script is:inline>
@@ -115,5 +110,22 @@ const socialImageURL = new URL(
   </head>
   <body>
     <slot />
+    <!-- Before the closing </body> -->
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+      docsearch({
+        // Your Search API Key
+        apiKey: '91716226ddff4868f56ec70c147894fb',
+        // The index populated by the DocSearch scraper
+        indexName: 'astro-docs-2',
+        // Your Algolia Application ID
+        appId: 'QKB2CZF019',
+        // Replace inputSelector with a CSS selector
+        // matching your search input
+        inputSelector: 'div#docsearch',
+        // Set debug to true to inspect the dropdown
+        debug: false,
+      });
+    </script>
   </body>
 </html>

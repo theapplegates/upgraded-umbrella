@@ -73,8 +73,7 @@ export default function SearchBar({ searchList }: Props) {
   return (
     <>
       <label className="relative block">
-      <div id="search"></div>
-        // <span className="sr-only">Search</span>
+         <span className="sr-only">Search</span>
         <span className="absolute inset-y-0 left-0 flex items-center pl-2 opacity-75">
          </span>
         <input

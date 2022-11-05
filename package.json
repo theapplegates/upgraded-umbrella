@@ -7,6 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "algolia": "atomic-algolia",
     "astro": "astro",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
@@ -14,9 +15,15 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@algolia/client-search": "^4.14.2",
     "@astrojs/image": "^0.11.1",
     "@astrojs/rss": "^1.0.3",
+    "@docsearch/js": "^3.3.0",
+    "algolia": "^0.0.0",
+    "algoliasearch": "^4.14.2",
     "astro": "^1.6.2",
+    "atomic-algolia": "^0.3.19",
+    "docsearch-scraper": "algolia/docsearch-scraper",
     "fuse.js": "^6.6.2",
     "github-slugger": "^2.0.0",
     "remark-collapse": "^0.1.2",
