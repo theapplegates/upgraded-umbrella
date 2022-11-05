@@ -26,6 +26,18 @@ const socialImageURL = new URL(
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    algoliasearchNetlify({
+      appId: 'PUN4C6KMW2',
+      apiKey: '9b65a47a47ed6220c730685ff171a23c',
+      siteId: '3581f58d-8835-438d-b1e7-0f770c66f6a6',
+      branch: 'main',
+      selector: 'div#search',
+    });
+  </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

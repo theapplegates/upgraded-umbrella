@@ -1,10 +1,10 @@
 import type { SocialsObject } from "./types";
 
 export const SITE = {
-  website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
+  website: "https://paper.paulapplegate.com/",
+  author: "Paul Applegate",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  title: "Living Life",
   ogImage: "default-og.png",
   lightAndDarkMode: true,
   postPerPage: 3,
@@ -40,7 +40,7 @@ export const SOCIALS: SocialsObject = [
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:me@paulapplegate.com",
     active: false,
   },
   {
