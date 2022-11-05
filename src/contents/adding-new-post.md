@@ -13,6 +13,10 @@ description:
   theme.
 ---
 
+![CDC Chart](https://applegate-paul.mo.cloudinary.net/zoom/CDC-Chart.jpg)
+
+
+
 Here are some rules/recommendations, tips & ticks for creating new posts in AstroPaper blog theme.
 
 ## Table of contents
