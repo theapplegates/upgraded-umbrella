@@ -4,6 +4,8 @@ import Card from "@components/Card";
 import slugify from "@utils/slugify";
 import type { Frontmatter } from "src/types";
 
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+
 type SearchItem = {
   title: string;
   description: string;
