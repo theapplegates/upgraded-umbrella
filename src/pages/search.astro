@@ -23,11 +23,11 @@ const searchList = posts
 ---
 // <div id="search"></div>
 
-<div id="docsearch"></div>
+// <div id="docsearch"></div>
 
 <Layout title={`Search | ${SITE.title}`}>
   <Header activeNav="search" />
-  <Main pageTitle="Search" pageDesc="Search any article ...">
+    <input type="search" class="docsearch-input" placeholder="Search" />
     <Search client:load searchList={searchList} />
   </Main>
   <Footer />
