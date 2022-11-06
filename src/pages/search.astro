@@ -7,7 +7,6 @@ import Footer from "@components/Footer.astro";
 import Search from "@components/Search";
 import type { Frontmatter } from "src/types";
 
-
 // Retrieve all articles
 const posts = await Astro.glob<Frontmatter>("../contents/**/*.md");
 
@@ -21,14 +20,11 @@ const searchList = posts
     frontmatter: post.frontmatter,
   }));
 ---
-// <div id="search"></div>
-
-// <div id="docsearch"></div>
 
 <Layout title={`Search | ${SITE.title}`}>
   <Header activeNav="search" />
-    <input type="search" class="docsearch-input" placeholder="Search" />
- //    <Search client:load searchList={searchList} />
+  <Main pageTitle="Search" pageDesc="Search any article ...">
+    <Search client:load searchList={searchList} />
   </Main>
   <Footer />
 </Layout>
